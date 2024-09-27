@@ -12,7 +12,7 @@ ol {
   position: relative;
 }
 
-.carusell > div {
+.carusell>div {
   position: absolute;
 
   width: 100%;
@@ -23,7 +23,7 @@ ol {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.carusell > ol {
+.carusell>ol {
   display: flex;
   justify-content: center;
 
