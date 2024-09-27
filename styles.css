@@ -1,0 +1,72 @@
+body {
+  margin: 0%;
+}
+
+ol {
+  margin: 0px;
+  padding: 0%;
+  list-style-type: none;
+}
+
+.carusell {
+  position: relative;
+}
+
+.carusell > div {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.carusell > ol {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#next-button {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#previous-button {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#specific-buttons {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: end;
+  justify-self: center;
+}
+
+.carusell img {
+  height: 100vh;
+  display: none;
+}
+
+.carusell img.current-image {
+  display: unset;
+}
+
+.carusell button {
+  opacity: 0.5;
+}
+
+.carusell button:hover {
+  scale: 1.2;
+  filter: drop-shadow(1px 1px 12px green);
+}
+
+.carusell button:active {
+  scale: 0.9;
+}
